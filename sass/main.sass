@@ -1,0 +1,54 @@
+$font-size-base: 1.2rem
+$font-size-primary: 1.5rem
+$font-size-btn: 1.8rem
+$font-size-heading: calc(1.525rem + 3.3vw)
+$font-color-main: #5050f0
+$border-style: 2px solid $font-color-main
+$border-radius: 15px
+$font-color-white: #fff
+
+
+html,body
+    margin: 0
+    padding: 0    
+
+.main-color-text
+    color: $font-color-main
+    font-size: $font-size-primary
+.main-color-heading
+    color: $font-color-main
+    font-size: $font-size-heading
+    font-weight: 500
+.section-header
+    padding-bottom: 2rem
+    text-align: center
+.border-bottom
+    border-bottom: 1px  solid $font-color-main !important
+    padding-bottom: 2rem
+.display-2
+    font-weight: 700
+.blue
+    background-color: $font-color-main
+    color: $font-color-white
+.btn-primary
+    background-color: $font-color-main
+    color: #fff
+    font-size: $font-size-btn
+    border: $border-style
+    transition: all .5s ease-out
+    &:hover
+        color: $font-color-main
+        background-color: transparent
+.additional-wrapper
+    padding-top: 120px 
+
+@import blocks/_nav
+@import blocks/_header
+@import blocks/_about
+@import blocks/_faq
+@import blocks/_services
+@import blocks/_portfolio
+@import blocks/_contacts
+@import blocks/_modal
+@import blocks/_cookie
+@import variables/media
